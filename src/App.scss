@@ -1,0 +1,17 @@
+@import "/node_modules/reset-css/sass/reset";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@mixin mobileScreen {
+    @media only screen and (max-width: 768px) {
+        @content;
+    }
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.App{
+    display: flex;
+    background-color: #EFF0F3;;
+    @include mobileScreen{
+        display: block;
+    }
+}
